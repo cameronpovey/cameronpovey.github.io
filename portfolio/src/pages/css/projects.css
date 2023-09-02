@@ -1,0 +1,14 @@
+.projApp {
+    background: #0f2027;
+    background: linear-gradient(to right, #0c0c0c, #1e1e1e);
+    animation: typeIn 1s ease;
+}
+
+@keyframes typeIn {
+    0% {
+      font-size: 6vw;
+    }
+    100% {
+      font-size: 5vw;
+    }
+  }
