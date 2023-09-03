@@ -26,12 +26,12 @@
   transform: translateY(-50%);
 }
 
-.selButton {
+.selButton, .notBlinking {
   font-size: 5vw;
   border: none;
   color: rgb(219, 219, 219);
   background-color: transparent;
-  width: fit-content;
+  width: 100%;
   margin: 2.5%;
   margin-left: 0px;
 
@@ -41,29 +41,61 @@
   transition: all 0.3s ease;
 }
 
+.MIDWAY {
+  width: 0%;
+}
+
 .animated {
-  animation: shrinkIn 0.3s ease;
+  font-size: 6vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 3px solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+
+  animation: 
+    typing 0.5s steps(8, end),
+    blink-caret step-end infinite;
+}
+
+.animatedOUT {
+  font-size: 6vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 3px solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+
+  animation: 
+    typingOUT 0.5s steps(8, end),
+    blink-caret step-end infinite;
 }
 
 .selButton:hover {
   font-size: 6vw;
+  
   animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
   0%, 50% {
-    border-right: 2px solid #fff;
+    border-right: 3px solid #fff;
   }
   51%, 100% {
-    border-right: 2px solid transparent;
+    border-right: 3px solid transparent;
   }
 }
 
-@keyframes shrinkIn {
+@keyframes typing {
   0% {
-    font-size: 6vw;
+    width: 0%;
   }
   100% {
-    font-size: 5vw;
+    width: 100%;
+  }
+}
+
+@keyframes typingOUT {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }

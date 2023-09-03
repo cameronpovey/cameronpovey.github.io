@@ -5,7 +5,7 @@ function Contact() {
     return(
         <div className='contApp'>
             <div className='subpage'>
-                Page Contact
+                Get in touch
             </div>
         </div>
     );

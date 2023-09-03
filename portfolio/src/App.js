@@ -11,22 +11,28 @@ function App() {
   const pages = ['Projects','Skills','About','Contact'];
 
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimatingOUT, setIsAnimatingOUT] = useState(false);
   const [clickedButtonIndex, setClickedButtonIndex] = useState(null);
 
   const [listPages, setPages] = useState(pages);
   const [selectedPage, setSelectedPage] = useState("Home");
 
   const handlePageClick = (page, index) => {
-    setSelectedPage(page);
-    setPages(pages.map((item) => (item === page ? 'Home' : item)));
-    
-    setClickedButtonIndex(index);
-    setIsAnimating(true);
 
+    setSelectedPage(page);
+    setClickedButtonIndex(index);
+      
+    setIsAnimatingOUT(true)
+    setTimeout(() => {
+      setIsAnimatingOUT(false)
+      setPages(pages.map((item) => (item === page ? 'Home' : item)));
+    }, 500);
+    
+    setIsAnimating(true);
     setTimeout(() => {
       setIsAnimating(false);
-      setClickedButtonIndex(null); // Clear the clicked button index after animation
-    }, 300);
+      setClickedButtonIndex(null);
+    }, 1250);
   };
 
   let content = null
@@ -58,7 +64,7 @@ function App() {
     <div className="App">
       <div className="pageList">
           {listPages.map((page, index) => (
-            <button key={page} onClick={() => handlePageClick(page, index)} className={`selButton ${isAnimating && index === clickedButtonIndex ? 'animated' : ''}`} style={{ cursor: 'pointer' }}>
+            <button key={page} onClick={() => handlePageClick(page, index)} className={`${isAnimatingOUT && index === clickedButtonIndex ? 'notBlinking MIDWAY animatedOUT' : isAnimating && index === clickedButtonIndex ? 'notBlinking animated' : 'selButton'}`} style={{ cursor: 'pointer' }}>
               {page}
             </button>
           ))}
