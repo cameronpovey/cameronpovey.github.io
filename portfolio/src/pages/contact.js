@@ -6,6 +6,9 @@ function Contact() {
         <div className='contApp'>
             <div className='subpage'>
                 Get in touch
+                <div className='subContent'>
+                    Reach out and get in contact with me
+                </div>
             </div>
         </div>
     );

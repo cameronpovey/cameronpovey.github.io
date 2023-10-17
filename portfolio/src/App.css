@@ -8,6 +8,15 @@
   text-align: left;
 }
 
+.subContent {
+  font-size: 3vw;
+}
+
+.gPara {
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+}
+
 .App {
   text-align: start;
   min-height: 100vh;

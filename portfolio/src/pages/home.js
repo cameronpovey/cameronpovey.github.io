@@ -7,6 +7,9 @@ function Home() {
             <div className='subpage'>
                 Hello World,<br></br>
                 I'm Cameron Povey
+                <div className='subContent'>
+                    A student at the University of the West of England studying Computer Science
+                </div>
             </div>
         </div>
     );

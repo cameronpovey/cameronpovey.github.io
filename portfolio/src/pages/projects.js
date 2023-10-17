@@ -6,6 +6,9 @@ function Projects() {
         <div className='projApp'>
             <div className='subpage'>
                 My Projects
+                <div className='subContent'>
+                    To learn and practice my skills in various areas and languages I have created various projects with ranges of success
+                </div>
             </div>
         </div>
     );
