@@ -62,15 +62,17 @@ function App() {
 
   return (
     <div className="App">
-      <div className="pageList">
-          {listPages.map((page, index) => (
-            <button key={page} onClick={() => handlePageClick(page, index)} className={`${isAnimatingOUT && index === clickedButtonIndex ? 'notBlinking MIDWAY animatedOUT' : isAnimating && index === clickedButtonIndex ? 'notBlinking animated' : 'selButton'}`} style={{ cursor: 'pointer' }}>
-              {page}
-            </button>
-          ))}
+      <div className='gridBack'>
+        <div className="pageList">
+            {listPages.map((page, index) => (
+              <button key={page} onClick={() => handlePageClick(page, index)} className={`${isAnimatingOUT && index === clickedButtonIndex ? 'notBlinking MIDWAY animatedOUT' : isAnimating && index === clickedButtonIndex ? 'notBlinking animated' : 'selButton'}`} style={{ cursor: 'pointer' }}>
+                {page}
+              </button>
+            ))}
+        </div>
+        {content}
       </div>
-      {content}
-  </div>
+    </div>
   );
 }
 

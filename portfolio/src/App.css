@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+html {
+  overflow-x: hidden;
+}
 
 .subpage { /*Used for subpage content*/
-  margin-left: 26vw;
-  height: 100vh;
+  margin-left: 20vw;
 
   font-family: 'Inconsolata', monospace;
   text-align: left;
+
+  padding-bottom: 10vh;
 }
 
 .subContent {
-  font-size: 3vw;
+  font-size: 25%;
 }
 
 .gPara {
@@ -26,6 +30,12 @@
   color: white;
 }
 
+.App {
+  /*idk*/
+  background: #0f2027;
+  background: linear-gradient(to right, #0c0c0c, #1e1e1e);
+}
+
 .pageList {
   position: fixed;
   display: flex;
@@ -36,7 +46,7 @@
 }
 
 .selButton, .notBlinking {
-  font-size: 5vw;
+  font-size: 4vw;
   border: none;
   color: rgb(219, 219, 219);
   background-color: transparent;
@@ -55,7 +65,7 @@
 }
 
 .animated {
-  font-size: 6vw;
+  font-size: 5vw;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 3px solid #fff; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -66,7 +76,7 @@
 }
 
 .animatedOUT {
-  font-size: 6vw;
+  font-size: 5vw;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 3px solid #fff; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -77,7 +87,7 @@
 }
 
 .selButton:hover {
-  font-size: 6vw;
+  font-size: 5vw;
   
   animation: blink 1s step-end infinite;
 }

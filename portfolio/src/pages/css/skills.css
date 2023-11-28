@@ -1,4 +1,40 @@
 .skillApp {
-    background: #0f2027;
-    background: linear-gradient(to right, #0c0c0c, #1e1e1e);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.container {
+    padding-top: 5%;
+    font-size: 40%;
+    
+}
+  
+.gridSkills {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-top: 1%;
+    /*
+    place-items: center;
+    */
+}
+
+.gridSkillsOther {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 1%;
+    font-size: 70%;
+    row-gap: 25%;
+}
+
+.gridItem {
+    width: 5vw;
+    transition: transform 0.25s ease-in-out;
+}
+
+.gridItem:hover {
+   transform: scale(1.25);
 }
