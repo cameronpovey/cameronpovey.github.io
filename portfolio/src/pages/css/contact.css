@@ -1,2 +1,28 @@
 .contApp {
 }
+
+.linkSocials {
+    font-size: 3vw;
+    border: none;
+    color: rgb(219, 219, 219);
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
+
+    font-weight: 300;
+}
+
+.linkSocials:hover {
+    text-decoration: underline;
+}
+
+.barWrap {
+    font-size: 3vw;
+    padding-top: 5%;
+}
+
+.info {
+    font-size: 2.5vw;
+    padding-top: 1%;
+    color: #a7a7a7;
+}

@@ -4,11 +4,10 @@ import './App.css';
 import Home from './pages/home.js';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
-import About from './pages/about';
 import Contact from './pages/contact';
 
 function App() {
-  const pages = ['Projects','Skills','About','Contact'];
+  const pages = ['Projects','Skills','Contact'];
 
   const [isAnimating, setIsAnimating] = useState(false);
   const [isAnimatingOUT, setIsAnimatingOUT] = useState(false);
@@ -46,9 +45,6 @@ function App() {
       break;
     case 'Skills':
       content = <Skills />
-      break;
-    case 'About':
-      content = <About />
       break;
     case 'Contact':
       content = <Contact />

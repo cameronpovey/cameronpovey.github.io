@@ -78,7 +78,7 @@ function Skills() {
         'Figma',
         'Windows',
         'MacOS',
-        'Unty',
+        'Unity',
         'Ardiuno',
         'Git',
         'Terminal',

@@ -1,2 +1,23 @@
 .homeApp {
 }
+
+.sidePointer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    animation: infinite passive 2.5s ease-in-out;
+
+    font-size: 2vw;
+  }
+
+  @keyframes passive {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }

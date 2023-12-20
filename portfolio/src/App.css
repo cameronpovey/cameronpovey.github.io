@@ -4,7 +4,7 @@ html {
 }
 
 .subpage { /*Used for subpage content*/
-  margin-left: 20vw;
+  margin-left: 22vw;
 
   font-family: 'Inconsolata', monospace;
   text-align: left;
@@ -17,8 +17,8 @@ html {
 }
 
 .gPara {
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .App {
