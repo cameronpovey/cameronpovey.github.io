@@ -91,6 +91,12 @@ function Skills() {
                 <div className='subContent'>
                     I am currently trying to develop my skills in a range of languages, these are a list of langauges I am confident in.
                 </div>
+                <div className='moreInfo'>
+                    💻 Currently I am focusing on advancing my skills within mobile app development using Flutter.
+                </div>
+                <div className='moreInfo'>
+                    📚 I am also Learning other frameworks such as Kotlin and Django.
+                </div>
 
                 <div className='container'>
                     Notable Base Languages

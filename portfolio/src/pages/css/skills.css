@@ -38,3 +38,8 @@
 .gridItem:hover {
    transform: scale(1.25);
 }
+
+.moreInfo {
+    padding-top: 2.5%;
+    font-size: 25%;
+}

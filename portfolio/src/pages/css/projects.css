@@ -2,11 +2,15 @@
     /*animation: typeIn 1s ease;*/
 }
 
-@keyframes typeIn {
-    0% {
-      font-size: 6vw;
-    }
-    100% {
-      font-size: 5vw;
-    }
-  }
+.linkGit {
+  font-size: 3vw;
+  border: none;
+  color: rgb(219, 219, 219);
+  background-color: transparent;
+  padding: 0%;
+  margin: 0%;
+}
+
+.linkGit:hover {
+  text-decoration: underline;
+}
